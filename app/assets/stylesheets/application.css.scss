@@ -1,13 +1,20 @@
-$primary-color: #59CCF2;
+$primary-color: #35aaF5;
+$hover-color: #59CCF2;
 $font-color: white;
 $font-stack:  Helvetica, sans-serif;
 
-#map{
-  width: 100%;
+body{
+  margin: 0;
+  padding: 0;
 }
 
-.quest_title{
-  /*display: inline-block;*/
+#map{
+  width: 100%;
+  height: 40em;
+}
+
+/*.quest_title{
+  display: inline-block;
   position: absolute;
   left:45%;
   top:0;
@@ -35,13 +42,13 @@ $font-stack:  Helvetica, sans-serif;
   display: inline-block;
   padding: 1em;
   color: white;
-}
+}*/
 
-.container{
+/*.container{
   height: 50em;
-}
+}*/
 
-#slide{
+/*#slide{
   background-image: url(image_path("background_home.jpg"));
   margin: 0;
   height: 61.25em;
@@ -100,41 +107,59 @@ $font-stack:  Helvetica, sans-serif;
       text-decoration: underline;
     }
 
-}
+}*/
 
 
-#main{
-
+/*#main{
   margin: 0;
   height: 61.25em;
-
-}
+}*/
 
 .sidebar {
   float: left;
-  padding: 0.5%;
-  margin: 1/3%;
-  width: 15%;
+  padding: 0;
+  margin: 0;
+  width: 16.666%;
   background-color: $primary-color;
+  height: 40em;
 }
 
 .middle {
   float: left;
-  padding: 0.5%;
-  margin: 1/3%;
-  width: 65%;
-  background-color: black;
+  padding: 0;
+  margin: 0;
+  width: 66.666%;
+  overflow: auto;
+}
+
+.button {
+  background-color: $primary-color;
+  display: block;
+  border: none;
+  padding-top: 5%;
+  padding-bottom: 5%;
+  text-align: center;
+  width: 100%;
+  font-size: 1em;
+}
+
+.button:hover {
+  background-color: $hover-color
+}
+
+iframe {
+  border: none;
 }
 
 
 
 /*----------------------------LAYOUT----------------------------------*/
 
-body{
+/*body{
   margin: 0;
-}
+}*/
 
-nav {
+/*nav {
   line-height: 3em;
   background-color: $primary-color;
   height: 3em;
@@ -151,16 +176,16 @@ nav {
     text-decoration: underline;
 
   }
-}
+}*/
 
-footer{
+/*footer{
   background-color: $primary-color;
   height: 7em;
-}
+}*/
 
 #enable_checkins {
   height: 1.25em;
-  width: 10%;
+  width: 100%;
   display: block;
   text-align: center;
   background-color: $primary-color;
@@ -168,7 +193,7 @@ footer{
 
 #enable_quests {
   height: 1.25em;
-  width: 10%;
+  width: 100%;
   display: block;
   text-align: center;
   background-color: $primary-color;

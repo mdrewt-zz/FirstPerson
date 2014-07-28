@@ -10,24 +10,22 @@
 </head>
 <body>
 
-  <% if logged_in? %>
-
-    <nav>
-      <%= link_to 'Sign Out', logout_path %>
-      <%= link_to 'Map', root_path %>
-      <%= link_to 'About', map_path %>
-      <%= link_to 'Contact Us', map_path %>
-    </nav>
+    <div id="main-nav" class="sidebar" >
+      <% if logged_in? %>
+        <%= button_to "Sign Out", "/logout", { method: :get, class: "button" } %>
+      <% else %>
+        <%= button_to 'Sign In', foursquare_path, { method: :get, class: "button" } %>
+      <% end %>
+      <%= button_to "Map", root_path, { method: :get, class: "button" } %>
+      <%= button_to "About", root_path, { method: :get, class: "button" } %>
+      <%= button_to "Contact Us", root_path, { method: :get, class: "button" } %>
+    </div>
 
     <p class="notice"><%= notice %></p>
     <p class="alert"><%= alert %></p>
-
-  <% end %>
 
   <%= yield %>
 
 </body>
 </html>
-
-
 
