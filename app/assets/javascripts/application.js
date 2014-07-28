@@ -18,10 +18,12 @@
 //= require_tree .
 
 var bindButtons = function(){
-  $("#enable_checkins").click(function() {
+  $("#enable_checkins").click(function(e) {
+    e.preventDefault();
     createCheckIns();
   });
-  $("#enable_quests").click(function() {
+  $("#enable_quests").click(function(e) {
+    e.preventDefault();
     createQuests();
   });
 }
