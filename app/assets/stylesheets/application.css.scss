@@ -157,6 +157,27 @@ iframe {
   text-align: center;
 }
 
+@media screen and (max-width: 700px) {
+  .button {
+    float: left;
+    width: 25%;
+  }
+
+  .sidebar {
+    width: 100%;
+    height: auto;
+  }
+
+  .middle {
+    width: 100%;
+  }
+
+  #map {
+    margin: auto;
+    width: 99vw;
+    height: 99vw;
+  }
+}
 
 
 /*----------------------------LAYOUT----------------------------------*/
